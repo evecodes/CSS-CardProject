@@ -32,6 +32,21 @@ footer {
 
 h1 {
 	text-align: center;
+	font-family: objektiv-mk1, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+h2 {
+	font-family: objektiv-mk1, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+p {
+	font-family: objektiv-mk1, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .collection_intro {
@@ -87,6 +102,7 @@ h1 {
 .text_pyramid {
 	grid-area: 1 / 1 / span 6 / span 6;
 	z-index: 5;
+	color: #fff;
 }
 
 .text_pyramid h2 {
@@ -94,28 +110,28 @@ h1 {
 }
 
 .pyramid_front {
-	background: linear-gradient(0deg, rgba(192,167,138,1) 0%, rgba(224,216,205,1) 13%, rgba(198,204,200,1) 30%, rgba(147,135,119,1) 75%, rgba(135,112,104,1) 100%);
+	background: linear-gradient(0deg, rgba(192,158,119,1) 0%, rgba(224,207,184,1) 13%, rgba(198,204,200,1) 25%, rgba(147,128,103,1) 70%, rgba(135,103,92,1) 100%);
 	grid-area: 3 / 2 / span 6 / span 6;
 	clip-path: polygon(70% 0%, 0% 100%, 100% 100%);
 	z-index: 4;
 }
 
 .pyramid_front_shadow {
-	background: linear-gradient(0deg, rgba(192,167,138,1) 0%, rgba(192,187,189,1) 8%, rgba(170,187,197,1) 20%, rgba(98,91,97,1) 71%, rgba(105,85,89,1) 100%);
+	background: linear-gradient(0deg, rgba(192,158,119,1) 0%, rgba(192,180,185,1) 8%, rgba(170,187,197,1) 20%, rgba(88,84,98,1) 71%, rgba(105,74,80,1) 100%);
 	grid-area: 3 / 2 / span 8 / span 8;
 	clip-path: polygon(52.6% 0%, 0% 100%, 100% 100%);
 	z-index: 3;
 }
 
 .pyramid_back {
-	background: linear-gradient(0deg, rgba(185,204,215,1) 0%, rgba(185,204,215,1) 20%, rgba(154,144,155,1) 70%, rgba(133,131,142,1) 100%);
+	background: linear-gradient(0deg, rgba(185,204,215,1) 0%, rgba(185,204,215,1) 20%, rgba(139,133,155,1) 70%, rgba(126,122,142,1) 100%);
 	grid-area: 3 / 5 / span 3 / span 4;
 	clip-path: polygon(70% 13%, 0% 100%, 100% 100%);
 	z-index: 2;
 }
 
 .pyramid_back_shadow {
-	background: linear-gradient(0deg, rgba(185,204,215,1) 0%, rgba(185,204,215,1) 20%, rgba(126,116,129,1) 71%, rgba(128,131,142,1) 100%);
+	background: linear-gradient(0deg, rgba(185,204,215,1) 0%, rgba(185,204,215,1) 20%, rgba(110,103,129,1) 71%, rgba(116,122,142,1) 100%);
 	grid-area: 3 / 5 / span 3 / span 6;
 	clip-path: polygon(46.7% 13%, 0% 100%, 100% 100%);
 	z-index: 1;
@@ -124,79 +140,85 @@ h1 {
 
 /*Card Hagfish and content*/
 .q_hagfish {
-	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+	background: linear-gradient(0deg, rgba(27,82,61,1) 0%, rgba(36,71,57,1) 15%, rgba(41,64,54,1) 30%, rgba(20,79,56,1) 73%, rgba(0,94,58,1) 100%);
 }
 
 .text_hagfish {
 	grid-area: 1 / 1 / span 6 / span 6;
 	z-index: 5;
-	color: white; /*Move to P and H2?*/
+	color: #bffff4;
 }
 
 
 /*Card Moon and content*/
 .q_moon {
-	background-color: rgba(245, 245, 220, 0.267);
+	background: linear-gradient(0deg, rgba(83,120,140,1) 0%, rgba(39,82,102,1) 25%, rgba(6,55,74,1) 65%, rgba(0,50,69,1) 100%);
 }
 
 .text_moon {
 	grid-area: 1 / 1 / span 6 / span 6;
 	z-index: 5;
+	color: #fff;
 }
 
 
 /*Card City building and content*/
 .q_citybuilding {
-	background-color: rgba(245, 245, 220, 0.267);
+	background: linear-gradient(0deg, rgba(242,149,56,1) 0%, rgba(242,149,56,1) 15%, rgba(209,91,0,1) 40%, rgba(143,0,101,1) 100%);
 }
 
 .text_citybuilding {
 	grid-area: 1 / 1 / span 6 / span 6;
 	z-index: 5;
+	color: #fff6d4;
 }
 
 
 /*Card Comodo dragon and content*/
 .q_comododragon {
-	background-color: rgba(245, 245, 220, 0.267);
+	background: linear-gradient(0deg, rgba(192,167,138,1) 0%, rgba(114,121,99,1) 15%, rgba(87,105,85,1) 30%, rgba(83,107,69,1) 65%, rgba(74,110,35,1) 100%);
 }
 
 .text_comododragon {
 	grid-area: 1 / 1 / span 6 / span 6;
 	z-index: 5;
+	color: #fff;
 }
 
 
 /*Card Deep Ocean and content*/
 .q_deepocean {
-	background-color: rgba(245, 245, 220, 0.267);
+	background: linear-gradient(0deg, rgba(59,58,74,1) 0%, rgba(28,48,61,1) 30%, rgba(23,46,59,1) 42%, rgba(22,46,59,1) 53%, rgba(13,86,115,1) 80%, rgba(0,139,191,1) 100%);
 }
 
 .text_deepocean {
 	grid-area: 1 / 1 / span 6 / span 6;
 	z-index: 5;
+	color: #b9c0ed;
 }
 
 
 /*Card Oldest Tree and content*/
 .q_oldtree {
-	background-color: rgba(245, 245, 220, 0.267);
+	background: linear-gradient(0deg, rgba(192,167,138,1) 0%, rgba(191,191,183,1) 28%, rgba(191,212,223,1) 40%, rgba(96,176,207,1) 75%, rgba(0,139,191,1) 100%);
 }
 
 .text_oldtree {
 	grid-area: 1 / 1 / span 6 / span 6;
 	z-index: 5;
+	color: #fff;
 }
 
 
 /*Card Rarest Mineral and content*/
 .q_raremineral {
-	background-color: rgba(245, 245, 220, 0.267);
+	background: linear-gradient(0deg, rgba(212,203,199,1) 0%, rgba(233,240,242,1) 100%);
 }
 
 .text_raremineral {
 	grid-area: 1 / 1 / span 6 / span 6;
 	z-index: 5;
+	color: #808080;
 }
 
 

@@ -4,3 +4,5 @@
  -Currently a work in progress-
  
  Update 01: Basic parts of the html and css layed out, first art made.
+
+ Update 02: Background colors for the art added, and a font update.
