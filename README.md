@@ -10,3 +10,5 @@
  Update 03: Ocean art added. Some typography added/moved/adjusted.
 
  Update 04: City art added. Some additional small changes to other parts.
+
+ Update 05: Added the information texts, changed/updated/fixed some as well.
