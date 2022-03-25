@@ -12,3 +12,5 @@
  Update 04: City art added. Some additional small changes to other parts.
 
  Update 05: Added the information texts, changed/updated/fixed some as well.
+
+ Update 06: Hagfish art added. Plus some minor tweaks.

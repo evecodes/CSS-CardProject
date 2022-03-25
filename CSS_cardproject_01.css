@@ -5,7 +5,7 @@
 }
 
 nav {
-	background: rgba(65, 65, 65, 1);
+	background-color: rgba(65, 65, 65, 1);
 	color: rgb(0, 0, 0);
 	padding: 1em;
 	margin-bottom: 2em;
@@ -157,9 +157,104 @@ p {
 	line-height: 1.3;
 }
 
-/*.hagfish_head {
+.hagfish_head {
+	grid-area: 3 / 7 / span 1 / span 2;
+	border-radius: 6rem 3rem 3rem 0;
+	background: linear-gradient(90deg, rgba(98,102,125,1) 0%, rgba(82,88,113,1) 80%, rgba(65,74,101,1) 100%);
+	z-index: 1;
+}
 
-} */
+.hagfish_body_one {
+	grid-area: 4 / 5 / span 1 / span 3;
+	border-radius: 6rem 0 6rem 0;
+	background: linear-gradient(90deg, rgba(98,102,125,1) 0%, rgba(82,88,113,1) 80%, rgba(65,74,101,1) 100%);
+}
+
+.hagfish_body_two {
+	grid-area: 5 / 3 / span 1 / span 3;
+	height: 50%;
+	align-self: start;
+	border-radius: 0 0 6rem 6rem;
+	background: linear-gradient(90deg, rgba(98,102,125,1) 0%, rgba(82,88,113,1) 80%, rgba(65,74,101,1) 100%);
+}
+
+.hagfish_body_three {
+	grid-area: 4 / 2 / span 1 / span 2;
+	height: 50%;
+	align-self: end;
+	border-radius: 6rem 6rem 0 0;
+	background: linear-gradient(270deg, rgba(98,102,125,1) 0%, rgba(82,88,113,1) 80%, rgba(65,74,101,1) 100%);
+}
+
+.hagfish_mouth_outer {
+	grid-area: 3 / 8 / span 1 / span 1;
+	height: 60%;
+	width: 60%;
+	margin: 0.3rem;
+	align-self: end;
+	justify-self: end;
+	shape-outside: circle();
+    clip-path: circle();
+	background-color: #3f192c;
+	z-index: 1;
+}
+
+.hagfish_mouth_inner {
+	grid-area: 3 / 8 / span 1 / span 1;
+	height: 50%;
+	width: 50%;
+	margin: 0.42rem;
+	align-self: end;
+	justify-self: end;
+	shape-outside: circle();
+    clip-path: circle();
+	background: linear-gradient(0deg, #3f2f4f 0%, #3f192c 100%);
+	z-index: 1;
+}
+
+.hagfish_whisker_one {
+	grid-area: 3 / 9 / span 1 / span 1;
+	width: 35%;
+	height: 17%;
+	align-self: center;
+	border-radius: 0 6rem 6rem 0;
+	background: linear-gradient(90deg, rgba(98,102,125,1) 0%, rgba(125,127,161,1) 80%, rgba(152,152,196,1) 100%);
+	z-index: 1; 
+}
+
+.hagfish_whisker_two {
+	grid-area: 4 / 8 / span 1 / span 1;
+	width: 17%;
+	height: 40%;
+	justify-self: center;
+	border-radius: 0 0 6rem 6rem;
+	background: linear-gradient(180deg, rgba(98,102,125,1) 0%, rgba(125,127,161,1) 80%, rgba(152,152,196,1) 100%); 
+}
+
+.hagfish_whisker_three {
+	grid-area: 3 / 8 / span 1 / span 2;
+	margin-top: 0.3rem;
+	width: 40%;
+	height: 17%;
+	align-self: center;
+	justify-self: center;
+	border-radius: 0 6rem 6rem 0;
+	background: linear-gradient(135deg, rgba(98,102,125,1) 0%, rgba(98,102,125,1) 60%, rgba(125,127,161,1) 80%, rgba(152,152,196,1) 100%);
+	transform: rotate(45deg);
+	z-index: 0;
+}
+
+.hagfish_whisker_four {
+	grid-area: 3 / 8 / span 2 / span 1;
+	margin-left: 0.7rem;
+	width: 17%;
+	height: 40%;
+	justify-self: left;
+	align-self: center;
+	border-radius: 0 0 6rem 6rem;
+	background: linear-gradient(180deg, rgba(98,102,125,1) 0%, rgba(98,102,125,1) 60%, rgba(125,127,161,1) 80%, rgba(152,152,196,1) 100%);
+	transform: rotate(45deg);
+}
 
 /*Card Moon and content*/
 .q_moon {
@@ -181,6 +276,8 @@ p {
 	font-size: 0.75rem;
 	line-height: 1.3;
 }
+
+/*Moon art as clipping, see hagfish*/
 
 
 /*Card City building and content*/
@@ -258,7 +355,7 @@ p {
 	grid-area: 6 / 1 / span 1 / span 5;
 	width: 90%;
 	justify-self: end;
-	background: #260826;
+	background-color: #260826;
 }
 
 /*Card Komodo dragon and content*/
@@ -298,7 +395,7 @@ p {
 }
 
 .ocean_rocks {
-	background: #07161c;
+	background-color: #07161c;
 	border-radius: 0.75rem;
 	grid-area: 1 / 1 / span 6 / span 10;
 	clip-path: polygon(26% 74%, 32% 100%, 42% 100%, 47% 69%, 49% 41%, 54% 21%, 57% 20%, 63% 33%, 72% 42%, 82% 37%, 90% 34%, 96% 18%, 100% 16%, 100% 100%, 0 100%, 0 15%, 5% 18%, 15% 13%, 22% 25%, 27% 58%);
