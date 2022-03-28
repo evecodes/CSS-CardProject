@@ -14,3 +14,5 @@
  Update 05: Added the information texts, changed/updated/fixed some as well.
 
  Update 06: Hagfish art added. Plus some minor tweaks.
+
+ Update 07: Moon art base. Plus some minor tweaks.
