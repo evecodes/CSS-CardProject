@@ -209,7 +209,6 @@ p {
 	margin: 0.42rem;
 	align-self: end;
 	justify-self: end;
-	shape-outside: circle();
     clip-path: circle();
 	background: linear-gradient(0deg, #3f2f4f 0%, #3f192c 100%);
 	z-index: 1;
@@ -267,7 +266,8 @@ p {
 .text_moon {
 	grid-area: 1 / 1 / span 6 / span 10;
 	width: 50%;
-	align-self: center;
+	margin-top: 1.75rem;
+	align-self: start;
 	justify-self: center;
 	z-index: 5;
 	text-align: center;
@@ -287,7 +287,7 @@ p {
 .moon_body {
 	grid-area: 1 / 1 / span 6 / span 10;
 	background: linear-gradient(0deg,rgba(98,140,157,1) 0%, rgba(174,199,211,1) 30%, rgba(191,212,223,1) 100%);
-	clip-path: circle(50% at 50% 115%);
+	clip-path: circle(50% at 50% 130%);
 }
 
 /*
@@ -301,7 +301,7 @@ p {
 Not working, grid size (?)
 */
 
-/* fix jumping */
+/* fix jumping of the details*/
 .moon_detail_one {
 	grid-area: 5 / 7 / span 1 / span 1;
 	background: linear-gradient(0deg, rgba(0,63,87,0.3) 0%, rgba(0,63,87,0) 100%);
@@ -314,6 +314,26 @@ Not working, grid size (?)
 	background: linear-gradient(0deg, rgba(0,63,87,0.3) 0%, rgba(0,63,87,0) 100%);
 	clip-path: circle();
 	z-index: 4;
+}
+
+.star_tiny_one {
+	grid-area: 4 / 2 / span 1 / span 1;
+	clip-path: circle(5%);
+	background-color: #bfd4df;
+}
+
+.star_tiny_two {
+	grid-area: 2 / 9 / span 1 / span 1;
+	clip-path: circle(8%);
+	background-color: #bfd4df;
+}
+
+.star_tiny_three {
+	grid-area: 1 / 8 / span 1 / span 1;
+	clip-path: circle(6%);
+	margin-right: 50%;
+	margin-top: 75%;
+	background-color: #bfd4df;
 }
 
 
@@ -347,7 +367,6 @@ Not working, grid size (?)
 
 .landscape_city_building_two {
 	grid-area: 4 / 10 / span 3 / span 1;
-	border-radius: 0 0 0.75rem 0;
 	background: linear-gradient(0deg, rgba(242,89,56,1) 0%, rgba(132,52,46,1) 15%, rgba(31,18,36,1) 50%, rgba(31,18,36,1) 100%);
 }
 
@@ -433,7 +452,6 @@ Not working, grid size (?)
 
 .ocean_rocks {
 	background-color: #07161c;
-	border-radius: 0.75rem;
 	grid-area: 1 / 1 / span 6 / span 10;
 	clip-path: polygon(26% 74%, 32% 100%, 42% 100%, 47% 69%, 49% 41%, 54% 21%, 57% 20%, 63% 33%, 72% 42%, 82% 37%, 90% 34%, 96% 18%, 100% 16%, 100% 100%, 0 100%, 0 15%, 5% 18%, 15% 13%, 22% 25%, 27% 58%);
 }
@@ -445,7 +463,8 @@ Not working, grid size (?)
 }
 
 .text_oldtree {
-	grid-area: 4 / 1 / span 3 / span 5;
+	grid-area: 4 / 1 / span 3 / span 6;
+	margin-left: 1rem;
 	z-index: 5;
 	color: #fff;
 }
