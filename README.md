@@ -15,6 +15,8 @@
 
  Update 06: Hagfish art added. Plus some minor tweaks.
 
- Update 07: Moon art base. Plus some minor tweaks.
+ Update 07: Moon art base added. Plus some minor tweaks.
 
  Update 08: HTML for remaining art added. Some minor fixes and details.
+
+ Update 09: Comodo art base added. Plus some minor tweaks.
