@@ -50,9 +50,11 @@ p {
 }
 
 .collection_intro {
-	margin-top: 6em;
+	/* margin-top: 6em; */
 	color: rgb(155, 155, 155);
 	text-align: center;
+	margin: 5rem auto 2rem auto;
+	width: min(95%, 120rem);
 }
 
 .cardcollection {
@@ -61,17 +63,17 @@ p {
 	grid-auto-flow: row;
 	gap: 1em;
 	margin: 5rem auto;
-	margin-top: 3em;
+	/* margin-top: 3rem; */
 	width: min(95%, 120rem);
 	background-color: rgba(212, 44, 44, 0);
-	overflow: hidden; /*check which overflow-hidden to keep*/
+	/*overflow: hidden; check which overflow-hidden to keep*/
 }
 
 .questioncard {
 	margin: 1em;
 	/*min-height: 4em;*/
 	background-color: rgb(0, 0, 0, 0.2);
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 .questioncard, .questioncard > * {
@@ -103,9 +105,11 @@ p {
 }
 
 .text_pyramid {
-	grid-area: 2 / 2 / span 5 / span 4;
+	grid-area: 1 / 1 / span 5 / span 4;
+	margin-top: 1.75rem;
+	margin-left: 1rem;
 	z-index: 5;
-	color: #fff; /*move text/fix placing */
+	color: #fff;
 }
 
 .text_pyramid > p {
@@ -304,6 +308,7 @@ p {
 	background-color: #8787a8;
 }
 
+
 /*Card Moon and content*/
 .q_moon {
 	background: linear-gradient(0deg, rgba(83,120,140,1) 0%, rgba(39,82,102,1) 25%, rgba(6,55,74,1) 65%, rgba(0,50,69,1) 100%);
@@ -462,6 +467,7 @@ Not working, grid size (?)
 	background-color: #260826;
 }
 
+
 /*Card Komodo dragon and content*/
 .q_komodo_dragon {
 	background: linear-gradient(0deg, rgba(192,167,138,1) 0%, rgba(114,121,99,1) 15%, rgba(87,105,85,1) 30%, rgba(83,107,69,1) 65%, rgba(74,110,35,1) 100%);
@@ -481,14 +487,14 @@ Not working, grid size (?)
 	line-height: 1.3;
 }
 
-.comodo_head_base {
+.komodo_head_base {
 	grid-area: 3 / 4 / span 2 / span 5;
 	border-radius: 6rem 6rem 6rem 6rem;
 	background: linear-gradient(90deg, rgba(153,144,102,1) 0%, rgba(94,78,36,1) 100%);
 	z-index: 2;
 }
 
-.comodo_tongue_one {
+.komodo_tongue_one {
 	grid-area: 4 / 3 / span 1 / span 2;
 	height: 20%;
 	width: 70%;
@@ -498,7 +504,7 @@ Not working, grid size (?)
 	background: linear-gradient(180deg, rgba(229,177,156,1) 0%, rgba(229,142,134,1) 100%);
 }
 
-.comodo_tongue_two {
+.komodo_tongue_two {
 	grid-area: 4 / 2 / span 1 / span 2;
 	height: 20%;
 	width: 80%;
@@ -511,7 +517,7 @@ Not working, grid size (?)
 	z-index: 2;
 }
 
-.comodo_tongue_three {
+.komodo_tongue_three {
 	grid-area: 4 / 2 / span 1 / span 1;
 	height: 15%;
 	width: 50%;
@@ -524,7 +530,7 @@ Not working, grid size (?)
 	transform: rotate(45deg);
 }
 
-.comodo_tongue_four {
+.komodo_tongue_four {
 	grid-area: 4 / 2 / span 1 / span 1;
 	height: 15%;
 	width: 40%;
@@ -535,7 +541,7 @@ Not working, grid size (?)
 	background-color: #e5b19c;
 }
 
-.comodo_head_eyebrow {
+.komodo_head_eyebrow {
 	grid-area: 3 / 6 / span 1 / span 1;
 	height: 30%;
 	width: 55%;
@@ -547,7 +553,7 @@ Not working, grid size (?)
 	z-index: 2;
 }
 
-.comodo_head_nosedot {
+.komodo_head_nosedot {
 	grid-area: 3 / 4 / span 1 / span 1;
 	width: 30%;
 	height: 20%;
@@ -559,7 +565,7 @@ Not working, grid size (?)
 	z-index: 2;
 }
 
-.comodo_head_eye {
+.komodo_head_eye {
 	grid-area: 3 / 6 / span 1 / span 1;
 	width: 33%;
 	height: 33%;
@@ -571,7 +577,7 @@ Not working, grid size (?)
 	z-index: 3;
 }
 
-.comodo_head_eyesparkle {
+.komodo_head_eyesparkle {
 	grid-area: 3 / 6 / span 1 / span 1;
 	width: 7%;
 	height: 7%;
@@ -584,7 +590,7 @@ Not working, grid size (?)
 	z-index: 4;
 }
 
-.comodo_body_throat {
+.komodo_body_throat {
 	grid-area: 4 / 5 / span 3 / span 4;
 	width: 85%;
 	justify-self: end;
@@ -592,18 +598,19 @@ Not working, grid size (?)
 	background: linear-gradient(270deg, rgba(94,78,36,1) 0%, rgba(64,48,23,1) 100%);
 }
 
-.comodo_body_neck {
+.komodo_body_neck {
 	grid-area: 3 / 7 / span 2 / span 3;
 	border-radius: 0 78% 0 0;
 	background-color: #5e4e24;
 }
 
-.comodo_body {
+.komodo_body {
 	grid-area: 4 / 7 / span 3 / span 4;
 	height: 85%;
 	align-self: end;
 	background-color: #5e4e24;
 }
+
 
 /*Card Deep Ocean and content*/
 .q_deepocean {
@@ -648,6 +655,8 @@ Not working, grid size (?)
 	line-height: 1.3;
 }
 
+/* Skew with deg! */
+
 
 /*Card Rarest Mineral and content*/
 .q_raremineral {
@@ -655,8 +664,9 @@ Not working, grid size (?)
 }
 
 .text_raremineral {
-	grid-area: 2 / 3 / span 3 / span 6;
+	grid-area: 1 / 3 / span 3 / span 6;
 	z-index: 5;
+	margin-top: 1.5rem;
 	text-align: center;
 	color: #808080;
 }
@@ -665,6 +675,66 @@ Not working, grid size (?)
 	padding-top: 0.4rem;
 	font-size: 0.75rem;
 	line-height: 1.3;
+}
+
+.mineral_top {
+	grid-area: 3 / 3 / span 2 / span 6;
+	height: 41%;
+	align-self: end;
+	margin-bottom: 1.2rem;
+	transform: skew(163deg);
+	/*clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 92%, 12% 0);*/
+	background: linear-gradient(0deg, rgba(237,142,177,1) 0%, rgba(226,51,105,1) 100%);
+	z-index: 0;
+}
+
+.mineral_middle {
+	grid-area: 4 / 2 / span 2 / span 7;
+	width: 87.5%;
+	height: 50%;
+	align-self: center;
+	justify-self: end;
+	background: linear-gradient(0deg, rgba(226,51,105,1) 0%, rgba(168,15,71,1) 100%);
+	z-index: 1;
+}
+
+.mineral_bottom {
+	grid-area: 5 / 3 / span 1 / span 6;
+	height: 50%;
+	align-self: end;
+	transform: skew(18deg);
+	background: linear-gradient(90deg, rgba(226,51,105,1) 0%, rgba(168,15,71,1) 100%);
+	z-index: 0;
+	box-shadow: .5rem .3rem 1.2rem #e0004b;
+}
+
+.mineral_bottom_detail {
+	grid-area: 5 / 3 / span 1 / span 6;
+	height: 50%;
+	align-self: end;
+	background: linear-gradient(90deg, rgba(148,0,57,0) 0%, rgba(148,0,57,1) 30%, rgba(148,0,57,0) 100%);
+	z-index: 1;
+}
+
+.mineral_rimlight {
+	grid-area: 4 / 3 / span 2 / span 6;
+	height: 50%;
+	align-self: center;
+	transform: skew(163deg);
+	border-bottom: 0.1rem solid #ffb0d0;
+	z-index: 2;
+}
+
+.mineral_rightside {
+	grid-area: 3 / 8 / span 3 / span 2;
+	width: 28%;
+	height: 77%;
+	margin-left: 0.5rem;
+	align-self: end;
+	justify-self: center;
+	clip-path: polygon(50% 0, 100% 35%, 100% 75%, 50% 100%, 0 75%, 0 35%);
+	background: linear-gradient(180deg, rgba(168,15,71,1) 0%, rgba(120,0,46,1) 100%);
+	z-index: 3;
 }
 
 

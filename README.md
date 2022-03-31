@@ -19,6 +19,8 @@
 
  Update 08: HTML for remaining art added. Some minor fixes and details.
 
- Update 09: Comodo art base added. Plus some minor tweaks.
+ Update 09: Komodo art base added. Plus some minor tweaks.
 
- Update 10: Comodo and Hagfish art detailed. Plus some minor tweaks.
+ Update 10: Komodo and Hagfish art detailed. Plus some minor tweaks.
+
+ Update 11: Mineral art added. Plus some minor tweaks.
