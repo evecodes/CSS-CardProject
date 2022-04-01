@@ -24,3 +24,5 @@
  Update 10: Komodo and Hagfish art detailed. Plus some minor tweaks.
 
  Update 11: Mineral art added. Plus some minor tweaks.
+
+ Update 12: Moon art changed/updated. Plus other minor art/text tweaks.

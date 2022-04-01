@@ -315,78 +315,106 @@ p {
 }
 
 .text_moon {
-	grid-area: 1 / 1 / span 6 / span 10;
+	grid-area: 2 / 1 / span 6 / span 10;
 	width: 50%;
-	margin-top: 1.75rem;
+	margin-top: 0.5rem;
 	align-self: start;
 	justify-self: center;
 	z-index: 5;
 	text-align: center;
-	color: #fff; /*move text/fix placing */
+	color: #fff;
 }
 
 .text_moon > p {
-	padding-top: 0.75rem;
+	padding-top: 0.4rem;
 	font-size: 0.75rem;
 	line-height: 1.3;
 }
 
-/*.moon_glow {
-	filter: drop-shadow(0 8rem 1rem rgba(242,149,56,1));
-} to try(?): before */
-
-/*test border radius with %*/
 .moon_body {
+	grid-area: 1 / 2 / span 6 / span 8;
+	width: 80%;
+	justify-self: center;
+	position: relative;
+	bottom: -60%;
+	margin-bottom: 1rem;
+	background: linear-gradient(0deg,rgba(98,140,157,1) 0%, rgba(174,199,211,1) 30%, rgba(191,212,223,1) 100%);
+	border-radius: 100% 100% 100% 100%;
+	box-shadow: 0 0 2rem #fff;
+}
+
+/*.moon_body {
 	grid-area: 1 / 1 / span 6 / span 10;
 	background: linear-gradient(0deg,rgba(98,140,157,1) 0%, rgba(174,199,211,1) 30%, rgba(191,212,223,1) 100%);
 	clip-path: circle(50% at 50% 130%);
-}
+} OLD version */
 
-/*
-.moon_body::before, .moon_body::after {
-	content: "";
-	width: 20px;
-	background-color: red;
-	filter: drop-shadow(20px 20px 4rem rgba(242,149,56,1));
-}
-
-Not working, grid size (?)
-*/
-
-/* fix jumping of the details*/
 .moon_detail_one {
-	grid-area: 5 / 7 / span 1 / span 1;
-	background: linear-gradient(0deg, rgba(0,63,87,0.3) 0%, rgba(0,63,87,0) 100%);
-	clip-path: circle();
+	grid-area: 5 / 6 / span 2 / span 2;
+	height: 50%;
+	width: 50%;
+	align-self: center;
+	justify-self: center;
+	border-radius: 100%;
+	background: linear-gradient(0deg, rgba(0,63,87,0.15) 0%, rgba(0,63,87,0) 100%);
 	z-index: 4;
 }
 
 .moon_detail_two {
-	grid-area: 4 / 4 / span 2 / span 2;
-	background: linear-gradient(0deg, rgba(0,63,87,0.3) 0%, rgba(0,63,87,0) 100%);
-	clip-path: circle();
+	grid-area: 4 / 4 / span 3 / span 2;
+	width: 100%;
+	height: 80%;
+	align-self: center;
+	border-radius: 100%;
+	background: linear-gradient(0deg, rgba(0,63,87,0.1) 0%, rgba(0,63,87,0) 100%);
 	z-index: 4;
 }
 
-/*fix star glitch*/
+.moon_detail_three {
+	grid-area: 3 / 5 / span 4 / span 4;
+	position: relative;
+	bottom: -50%;
+	border-radius: 100% 100% 0 0;
+	background: linear-gradient(0deg, rgba(0,63,87,0.3) 0%, rgba(0,63,87,0) 100%);
+	z-index: 4;
+}
+
 .star_tiny_one {
 	grid-area: 4 / 2 / span 1 / span 1;
-	clip-path: circle(5%);
+	width: 12%;
+	height: 12%;
+	align-self: center;
+	justify-self: center;
+	border-radius: 100%;
+	/*clip-path: circle(5%);*/
 	background-color: #bfd4df;
+	box-shadow: 0 0 0.5rem #fff;
 }
 
 .star_tiny_two {
 	grid-area: 2 / 9 / span 1 / span 1;
-	clip-path: circle(8%);
+	width: 11%;
+	height: 11%;
+	align-self: center;
+	justify-self: center;
+	border-radius: 100%;
+	/*clip-path: circle(8%);*/
 	background-color: #bfd4df;
+	box-shadow: 0 0 0.5rem #fff;
 }
 
 .star_tiny_three {
 	grid-area: 1 / 8 / span 1 / span 1;
-	clip-path: circle(6%);
-	margin-right: 50%;
-	margin-top: 75%;
+	width: 5%;
+	height: 5%;
+	align-self: end;
+	justify-self: start;
+	border-radius: 100%;
+	/*clip-path: circle(6%);*/
+	margin-bottom: 0.4rem;
+	margin-left: 0.4rem;
 	background-color: #bfd4df;
+	box-shadow: 0 0 0.2rem #fff;
 }
 
 
@@ -592,10 +620,14 @@ Not working, grid size (?)
 
 .komodo_body_throat {
 	grid-area: 4 / 5 / span 3 / span 4;
-	width: 85%;
-	justify-self: end;
-	clip-path: ellipse(); /* use border radius? fix placing*/
+	width: 60%;
+	justify-self: center;
+	position: relative;
+	bottom: -10%;
+	border-radius: 100% 100% 50% 100%;
+	/*clip-path: ellipse();*/
 	background: linear-gradient(270deg, rgba(94,78,36,1) 0%, rgba(64,48,23,1) 100%);
+	z-index: 1;
 }
 
 .komodo_body_neck {
@@ -679,9 +711,9 @@ Not working, grid size (?)
 
 .mineral_top {
 	grid-area: 3 / 3 / span 2 / span 6;
-	height: 41%;
+	height: 40%;
 	align-self: end;
-	margin-bottom: 1.2rem;
+	margin-bottom: 1.25rem;
 	transform: skew(163deg);
 	/*clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 92%, 12% 0);*/
 	background: linear-gradient(0deg, rgba(237,142,177,1) 0%, rgba(226,51,105,1) 100%);
@@ -690,7 +722,7 @@ Not working, grid size (?)
 
 .mineral_middle {
 	grid-area: 4 / 2 / span 2 / span 7;
-	width: 87.5%;
+	width: 87.3%;
 	height: 50%;
 	align-self: center;
 	justify-self: end;
@@ -718,10 +750,22 @@ Not working, grid size (?)
 
 .mineral_rimlight {
 	grid-area: 4 / 3 / span 2 / span 6;
-	height: 50%;
-	align-self: center;
+	height: 3%;
+	align-self: start;
+	margin-top: 1.2rem;
 	transform: skew(163deg);
-	border-bottom: 0.1rem solid #ffb0d0;
+	background: linear-gradient(90deg, rgba(255,176,208,0) 0%, rgba(255,176,208,1) 65%, rgba(255,176,208,0) 100%);
+	/*border-bottom: 0.1rem solid #ffb0d0;*/
+	z-index: 2;
+}
+
+.mineral_shadowrim {
+	grid-area: 4 / 3 / span 2 / span 6;
+	height: 3%;
+	align-self: end;
+	margin-bottom: 1.2rem;
+	transform: skew(163deg);
+	background: linear-gradient(90deg, rgba(148,0,57,0) 0%, rgba(148,0,57,1) 20%, rgba(148,0,57,1) 90%, rgba(148,0,57,1) 100%);
 	z-index: 2;
 }
 
