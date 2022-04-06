@@ -26,3 +26,5 @@
  Update 11: Mineral art added. Plus some minor tweaks.
 
  Update 12: Moon art changed/updated. Plus other minor art/text tweaks.
+
+ Update 13: Tree art base added.
