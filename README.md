@@ -1,8 +1,10 @@
 # CSS-CardProject
- HTML and CSS-art with a responsive design. The art was first designed in Adobe Illustrator and used as a guide for the CSS versions.
+ HTML and CSS-art with a responsive design. The art was first designed in Adobe Illustrator and used as a guide for the CSS versions. 
  
- -Currently a work in progress-
- 
+ Version 1.0.
+
+-----
+
  Update 01: Basic parts of the html and css layed out, first art made.
 
  Update 02: Background colors for the art added, and a font update.
@@ -32,3 +34,6 @@
  Update 14: Tree continued.
 
  Update 15: Tree art finished.
+
+ Update 16: Some finishing touches, and some minor fixes/changes/updates to some of the art and fonts. Added PNG designfile.
+ -Version 1.0 ready.

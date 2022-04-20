@@ -5,10 +5,9 @@
 }
 
 nav {
-	background-color: rgba(65, 65, 65, 1);
-	color: rgb(0, 0, 0);
-	padding: 1em;
-	margin-bottom: 2em;
+	background-color: rgb(65, 65, 65);
+	color: rgb(207, 207, 207);
+	margin-bottom: 2rem;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -32,15 +31,21 @@ footer {
 
 h1 {
 	text-align: center;
-	font-family: objektiv-mk1, sans-serif;
-	font-weight: 700;
+	font-family: 'Odor Mean Chey', serif;
+	font-weight: 400;
 	font-style: normal;
+	font-size: 2rem;
 }
 
 h2 {
 	font-family: objektiv-mk1, sans-serif;
 	font-weight: 700;
 	font-style: normal;
+}
+
+.collection_intro > h2 {
+	font-family: 'Odor Mean Chey', serif;
+	font-weight: 400;
 }
 
 p {
@@ -50,10 +55,10 @@ p {
 }
 
 .collection_intro {
-	/* margin-top: 6em; */
 	color: rgb(155, 155, 155);
 	text-align: center;
-	margin: 5rem auto 2rem auto;
+	margin: 5rem auto 0 auto;
+	padding-top: 1rem;
 	width: min(95%, 120rem);
 }
 
@@ -61,30 +66,21 @@ p {
 	display: grid;
 	grid-template: auto / repeat(2, 1fr);
 	grid-auto-flow: row;
-	gap: 1em;
-	margin: 5rem auto;
-	/* margin-top: 3rem; */
+	gap: 0.75rem;
+	margin: 1rem auto 5rem auto;
 	width: min(95%, 120rem);
 	background-color: rgba(212, 44, 44, 0);
-	/*overflow: hidden; check which overflow-hidden to keep*/
 }
 
 .questioncard {
 	margin: 1em;
-	/*min-height: 4em;*/
 	background-color: rgb(0, 0, 0, 0.2);
-	/*overflow: hidden;*/
 }
 
 .questioncard, .questioncard > * {
 	border-radius: 0.75rem;
 }
 
-/*
-.questioncard > * {
-	padding: 2.5em;
-}
-*/
 
 /*Question Card Grids*/
 .q_pyramid, .q_hagfish, .q_moon, .q_citybuilding, .q_komodo_dragon, .q_deepocean, .q_oldtree, .q_raremineral {	
@@ -343,12 +339,6 @@ p {
 	box-shadow: 0 0 2rem #fff;
 }
 
-/*.moon_body {
-	grid-area: 1 / 1 / span 6 / span 10;
-	background: linear-gradient(0deg,rgba(98,140,157,1) 0%, rgba(174,199,211,1) 30%, rgba(191,212,223,1) 100%);
-	clip-path: circle(50% at 50% 130%);
-} OLD version */
-
 .moon_detail_one {
 	grid-area: 5 / 6 / span 2 / span 2;
 	height: 50%;
@@ -386,7 +376,6 @@ p {
 	align-self: center;
 	justify-self: center;
 	border-radius: 100%;
-	/*clip-path: circle(5%);*/
 	background-color: #bfd4df;
 	box-shadow: 0 0 0.5rem #fff;
 }
@@ -398,7 +387,6 @@ p {
 	align-self: center;
 	justify-self: center;
 	border-radius: 100%;
-	/*clip-path: circle(8%);*/
 	background-color: #bfd4df;
 	box-shadow: 0 0 0.5rem #fff;
 }
@@ -410,7 +398,6 @@ p {
 	align-self: end;
 	justify-self: start;
 	border-radius: 100%;
-	/*clip-path: circle(6%);*/
 	margin-bottom: 0.4rem;
 	margin-left: 0.4rem;
 	background-color: #bfd4df;
@@ -506,11 +493,11 @@ p {
 	margin-top: 1rem;
 	margin-left: 1rem;
 	z-index: 5;
-	color: #fff; /* move text, fix placing */
+	color: #fff;
 }
 
 .text_komodo_dragon > p {
-	padding-top: 0.4rem;
+	padding-top: 0.5rem;
 	font-size: 0.75rem;
 	line-height: 1.3;
 }
@@ -625,7 +612,6 @@ p {
 	position: relative;
 	bottom: -10%;
 	border-radius: 100% 100% 50% 100%;
-	/*clip-path: ellipse();*/
 	background: linear-gradient(270deg, rgba(94,78,36,1) 0%, rgba(64,48,23,1) 100%);
 	z-index: 1;
 }
@@ -780,14 +766,13 @@ p {
 }
 
 .tree_branch_five {
-	grid-area: 2 / 7 / span 3 / span 2;
-	width: 15%;
-	margin-left: 4rem;
-	margin-bottom: 3rem;
-	margin-top: 1.4rem;
-	justify-self: center;
+	grid-area: 3 / 8 / span 1 / span 2;
+	height: 30%;
+	width: 55%;
+	margin-left: 1rem;
+	justify-self: start;
+	align-self: start;
 	background: linear-gradient(180deg, rgba(93,53,28,1) 0%, rgba(133,78,61,1) 80%, rgba(133,78,61,1) 100%);	
-	transform: rotate(90deg);
 	z-index: 0;
 }
 
@@ -807,7 +792,7 @@ p {
     height: 100%;
 	transform-origin: 100% 0;
 	transform: rotate(-45deg);
-	background: linear-gradient(90deg, rgba(93,53,28,1) 0%, rgba(133,78,61,1) 80%, rgba(133,78,61,1) 100%);
+	background: linear-gradient(90deg, rgba(93,53,28,1) 0%, rgba(133,78,61,1) 90%, rgba(133,78,61,1) 100%);
 }
 
 .tree_roots_two {
@@ -854,21 +839,9 @@ p {
 	margin-top: 0.5rem;
 	height: 35%;
 	border-radius: 100%;
-	background-color: rgba(93, 53, 28, 0.7);
-	filter: blur(0.7rem);
+	background-color: rgba(93, 53, 28, 0.5);
+	filter: blur(0.5rem);
 }
-
-/*.tree_roots_three {
-	grid-area: 4 / 6 / span 2 / span 2;
-	margin-left: 1rem;
-	width: 0;
-	height: 0;
-	border-bottom: 3.5rem solid #854e3d;
-	border-right: 3.5rem solid transparent;
-	align-self: end;
-	background-color: #854e3d;
-	z-index: 0;
-} OLD version */
 
 
 /*Card Rarest Mineral and content*/
@@ -896,7 +869,6 @@ p {
 	align-self: end;
 	margin-bottom: 1.25rem;
 	transform: skew(163deg);
-	/*clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 92%, 12% 0);*/
 	background: linear-gradient(0deg, rgba(237,142,177,1) 0%, rgba(226,51,105,1) 100%);
 	z-index: 0;
 }
@@ -936,7 +908,6 @@ p {
 	margin-top: 1.2rem;
 	transform: skew(163deg);
 	background: linear-gradient(90deg, rgba(255,176,208,0) 0%, rgba(255,176,208,1) 65%, rgba(255,176,208,0) 100%);
-	/*border-bottom: 0.1rem solid #ffb0d0;*/
 	z-index: 2;
 }
 
@@ -967,6 +938,7 @@ p {
 footer p {
 	text-align: center;
 	font-size: 0.8rem;
+	color: rgb(207, 207, 207);
 }
 
 
@@ -974,6 +946,14 @@ footer p {
 @media screen and (max-width: 720px) {
 	.cardcollection {
 		grid-template: auto / repeat(1, 1fr);
+	}
+
+	.collection_intro {
+		color: rgb(155, 155, 155);
+		text-align: center;
+		margin: 5rem auto 0 auto;
+		padding-top: 1rem;
+		width: min(85%, 120rem);
 	}
 }
 
